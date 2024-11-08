@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<style>
+    .contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: aquamarine;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .text {
+        
+        max-width: 1000px;
+        height: 100px;
+        background-color: rgb(255, 38, 0);
+        color: #fff;
+        margin: 0 auto;
+        padding: 10px 50px 10px 50px;
+        box-sizing: border-box;
+    }
+
+    @media(max-width:767px) {
+        .contents {
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .text{
+            margin: 0 auto;
+            padding: 10px 50px 10px 50px;
+        box-sizing: border-box;
+        }
+    }
+
+    .img {
+        width: 200px;
+        display: flex;
+        
+    }
+
+    .text1{
+        padding: 0 0 20px 0;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横並びサンプル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contents">
+        <div class="box"><img src="img/a.svg" alt="画像ボックス">
+            <div class=text1>テキスト１</div>
+        </div>
+        <div class="box"><img src="img/b.svg" alt="画像ボックス">
+            <div class=text1>テキスト２</div>
+        </div>
+        <div class="box"><img src="img/c.svg" alt="画像ボックス">
+            <div class=text1>テキスト３</div>
+        </div>
+        <div class="box"><img src="img/d.svg" alt="画像ボックス">
+            <div class=text1>テキスト４</div>
+        </div>
+    </div>
+    <div class="text">
+        D125<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+    </div>
+</body>
+
+</html>
